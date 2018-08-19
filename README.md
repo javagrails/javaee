@@ -1,2 +1,2 @@
-# concepts
-different technology contepts
+# Concepts
+Contepts of different technologies 
