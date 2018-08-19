@@ -2,6 +2,8 @@ package saleh.is.smart.app;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import saleh.is.smart.app.domain.Address;
+import saleh.is.smart.app.domain.ContactBook;
 import saleh.is.smart.app.domain.Patient;
 
 public class Application {
@@ -10,13 +12,13 @@ public class Application {
         patient.speak();*/
 
         // make patient as spring bean
-        String beanPath = "beans.xml";
+        String beanPath = "beans/beans.xml";
 
         ApplicationContext context = new ClassPathXmlApplicationContext(beanPath);
 
-        Patient patient = (Patient) context.getBean("patient");
-        //patient.speak();
-        System.out.println(patient);
+        ContactBook contacts = (ContactBook) context.getBean("contactbook");
+
+        System.out.println(contacts);
 
 
 
