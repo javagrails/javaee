@@ -5,7 +5,7 @@
 
 
 
-    <!--Salman is here-->
+    <!--Salman is not here-->
     <bean id="patient" class="saleh.is.smart.app.domain.Patient">
         <constructor-arg value="5" name="id"></constructor-arg>
         <constructor-arg value="Tom" name="name"></constructor-arg>
