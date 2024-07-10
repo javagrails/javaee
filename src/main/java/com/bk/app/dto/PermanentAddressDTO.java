@@ -1,8 +1,10 @@
 package com.bk.app.dto;
 
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import jakarta.validation.constraints.NotBlank;
 
+@JacksonXmlRootElement(localName = "Permanent")
 public class PermanentAddressDTO {
 
   @NotBlank(message = "Village is mandatory")

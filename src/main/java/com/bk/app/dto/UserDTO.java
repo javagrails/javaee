@@ -1,5 +1,6 @@
 package com.bk.app.dto;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
@@ -7,8 +8,13 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.util.Date;
 
-@JacksonXmlRootElement(localName = "User")
+@JacksonXmlRootElement(localName = "user")
 public class UserDTO {
+
+  @JacksonXmlProperty(isAttribute = true)
+  @NotNull(message = "ID is mandatory")
+  private Long id;
+
 
   @NotBlank(message = "Full name is mandatory")
   private String fullName;
@@ -22,10 +28,19 @@ public class UserDTO {
 
   @Valid
   @NotNull(message = "Address is mandatory")
+  //@JacksonXmlProperty(localName = "MyAddress")
   private AddressDTO address;
 
   // Getters and Setters
 
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
+  }
 
   public String getFullName() {
     return fullName;
@@ -62,7 +77,8 @@ public class UserDTO {
   @Override
   public String toString() {
     return "UserDTO{" +
-        "fullName='" + fullName + '\'' +
+        "id=" + id +
+        ", fullName='" + fullName + '\'' +
         ", email='" + email + '\'' +
         ", dateOfBirth=" + dateOfBirth +
         ", address=" + address +

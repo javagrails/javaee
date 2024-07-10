@@ -1,7 +1,9 @@
 package com.bk.app.dto;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import jakarta.validation.constraints.NotBlank;
 
+@JacksonXmlRootElement(localName = "Current")
 public class CurrentAddressDTO {
 
   @NotBlank(message = "House is mandatory")
