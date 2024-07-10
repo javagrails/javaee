@@ -4,3 +4,17 @@
 
    ![Resources](/docs/01-postman-user-create.png)
 
+   ![Resources](/docs/02-postman-user-create.png)
+
+   ![Resources](/docs/03-postman-user-create.png)
+
+   ![Resources](/docs/04-curl-bash-user-create.png)
+
+   ![Resources](/docs/05-http-api-call-user-create.png)
+
+   ![Resources](/docs/06-resources-locations.png)
+
+   ![Resources](/docs/07-test-care-success.png)
+
+
+##### Happy Coding Bro..
