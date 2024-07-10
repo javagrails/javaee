@@ -17,4 +17,4 @@
    ![Resources](/docs/07-test-care-success.png)
 
 
-##### Happy Coding Bro..
+##### Happy Coding Brother
