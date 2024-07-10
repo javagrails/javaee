@@ -1,0 +1,12 @@
+<MyAddress>
+  <current>
+    <house>99</house>
+    <road>100</road>
+    <city>Dhaka</city>
+  </current>
+  <permanent>
+    <village>Bilashpur</village>
+    <union>Dhanbari</union>
+    <district>Tangail</district>
+  </permanent>
+</MyAddress>
