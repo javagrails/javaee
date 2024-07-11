@@ -4,7 +4,7 @@
 
    ![Resources](https://github.com/javagrails/javaee/blob/develop/spring-jackson/docs/01-postman-user-create.png)
 
-   ![Resources](/docs/02-postman-user-create.png)
+   ![Resources](/spring-jackson/docs/02-postman-user-create.png)
 
    ![Resources](/docs/03-postman-user-create.png)
 
