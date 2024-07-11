@@ -1,0 +1,19 @@
+
+
+
+
+011-start
+Bean initializes by factory method
+Factory Class usages
+
+
+010
+Bean life cycle
+destroy method only call if bean scope is a none-prototype
+
+009
+Each spring beans has some scope [prototype, request, session, singleton]
+by default those are on singleton scope
+
+
+

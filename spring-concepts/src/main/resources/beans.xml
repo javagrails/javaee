@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy"
+>
+
+    <bean id="bird"
+          class="spring.concepts.app.beans.Bird"
+          scope="singleton"
+          init-method="onCreateBean"
+          destroy-method="onDestroyBean"
+
+    >
+        <constructor-arg name="id" value="1"></constructor-arg>
+        <constructor-arg name="name" value="Parrot"></constructor-arg>
+        <property name="zone" value="Dhaka"></property>
+
+        <!--FOOD object is injected at BIRD object & it is called dependency injection-->
+        <property name="food" ref="food"></property>
+
+    </bean>
+
+    <bean id="food" class="spring.concepts.app.di.Food">
+        <constructor-arg name="code" value="10"></constructor-arg>
+        <constructor-arg name="type" value="gains"></constructor-arg>
+    </bean>
+
+</beans>
