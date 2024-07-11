@@ -10,9 +10,9 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.bk.app</groupId>
-  <artifactId>spring-jackson-xml</artifactId>
+  <artifactId>spring-jackson</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>spring-jackson-xml</name>
+  <name>spring-jackson</name>
   <description>Example of Spring Jackson XML</description>
   <url/>
   <licenses>
