@@ -2,7 +2,7 @@
 *****
    => Jackson XML DTO Capture  in Rest Controller
 
-   ![Resources](/docs/01-postman-user-create.png)
+   ![Resources](https://github.com/javagrails/javaee/blob/develop/spring-jackson/docs/01-postman-user-create.png)
 
    ![Resources](/docs/02-postman-user-create.png)
 
